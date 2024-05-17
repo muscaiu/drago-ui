@@ -1,6 +1,6 @@
 {
   "name": "drago-ui",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "files": [
     "dist"
   ],
@@ -50,6 +50,7 @@
     "@typescript-eslint/parser": "^7.9.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
+    "chromatic": "^11.3.5",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
