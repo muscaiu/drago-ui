@@ -37,6 +37,6 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: "./lib/test/setup.ts",
-    // css: true, // may slow things down
+    css: true, // may tests slower
   },
 });

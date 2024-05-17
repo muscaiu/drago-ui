@@ -23,12 +23,14 @@ export const Primary: Story = {
   args: {
     label: "Click me!",
     primary: true,
+    onClick: () => console.log("Clicked!"),
   },
 };
 
 export const Secondary: Story = {
   args: {
     label: "Click me!",
-    size: "medium",
+    size: "small",
+    onClick: () => console.log("Clicked!"),
   },
 };
