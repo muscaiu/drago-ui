@@ -7,7 +7,7 @@ type Props = {
 
 export const Button = ({
   children,
-  primary = false,
+  primary = true,
   size = 'medium',
   onClick,
   ...props

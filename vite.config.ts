@@ -9,7 +9,7 @@ import autoprefixer from "autoprefixer";
 import dts from "vite-plugin-dts";
 
 export default defineConfig({
-  plugins: [react(), tsConfigPaths(), dts()],
+  plugins: [react(), tsConfigPaths(), dts({ insertTypesEntry: true})],
   build: {
     // ui-library entry and output settings
     lib: {
