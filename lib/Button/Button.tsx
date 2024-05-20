@@ -7,7 +7,7 @@ export type ButtonProps = {
 
 export const Button: React.FC<ButtonProps> = ({
   children,
-  primary = true,
+  primary = false,
   size = 'medium',
   onClick,
   ...props

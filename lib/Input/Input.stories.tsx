@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Input, InputProps } from './Input';
 
 const meta: Meta<InputProps> = {
-  title: 'Example/Input',
+  title: 'Drago-UI/Input',
   component: Input,
   parameters: {
     controls: { expanded: true },
@@ -26,7 +26,7 @@ export const Email: Story = {
     id: 'email',
     label: 'Email',
     type: 'email',
-    placeholder: 'john.doe@example.com',
+    placeholder: 'john.doe@Drago-UI.com',
     required: true,
   },
 };

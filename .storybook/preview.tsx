@@ -1,6 +1,5 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
-// import { themes, ensure } from '@storybook/theming';
 import {
   Title,
   Subtitle,
@@ -9,7 +8,9 @@ import {
   Controls,
   Stories,
 } from '@storybook/blocks';
+// import { themes, ensure } from '@storybook/theming';
 
+import CodeBlock from './CodeBlock';
 import '../lib/tailwind.css';
 
 const preview: Preview = {
@@ -33,7 +34,17 @@ const preview: Preview = {
         </>
       ),
       toc: true,
-      // theme: ensure(themes.dark),
+      components: {
+        code: CodeBlock,
+      },
+      // theme: ensure(themes.light),
+    },
+    options: {
+      storySort: {
+        method: '',
+        order: ['Drago-UI', ['Button', 'Input', 'CopyToClipboard']],
+        locales: '',
+      },
     },
   },
   tags: ['autodocs'],

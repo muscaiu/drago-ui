@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { CopyToClipboard, CopyToClipboardProps } from './CopyToClipboard';
 
 const meta: Meta<CopyToClipboardProps> = {
-  title: 'Example/CopyToClipboard',
+  title: 'Drago-UI/CopyToClipboard',
   component: CopyToClipboard,
 };
 

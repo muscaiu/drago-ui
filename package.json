@@ -1,6 +1,6 @@
 {
   "name": "drago-ui",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "files": [
     "dist"
   ],
@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "@storybook/addon-a11y": "^8.1.1",
-    "@storybook/theming": "^8.1.1",
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
     "@testing-library/user-event": "^14.5.2",
@@ -45,9 +44,11 @@
     "@storybook/addon-links": "^8.1.1",
     "@storybook/addon-onboarding": "^8.1.1",
     "@storybook/blocks": "^8.1.1",
+    "@storybook/manager-api": "^8.1.1",
     "@storybook/react": "^8.1.1",
     "@storybook/react-vite": "^8.1.1",
     "@storybook/test": "^8.1.1",
+    "@storybook/theming": "^8.1.1",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.9.0",
