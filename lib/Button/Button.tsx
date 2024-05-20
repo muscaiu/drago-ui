@@ -5,7 +5,7 @@ export type ButtonProps = {
   onClick?: () => void;
 };
 
-export const Button = ({
+export const Button: React.FC<ButtonProps> = ({
   children,
   primary = true,
   size = 'medium',

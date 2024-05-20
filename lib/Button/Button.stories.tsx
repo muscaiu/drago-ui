@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
 import { Button, ButtonProps } from './Button';
 
 const meta: Meta<ButtonProps> = {
@@ -11,10 +12,10 @@ const meta: Meta<ButtonProps> = {
       accessToken: import.meta.env.STORYBOOK_FIGMA_ACCESS_TOKEN,
     },
   },
+  // tags: ['!autodocs'],
 };
 
 export default meta;
-
 type Story = StoryObj<ButtonProps>;
 
 export const Primary: Story = (args: ButtonProps) => <Button {...args} />;

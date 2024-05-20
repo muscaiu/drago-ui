@@ -1,4 +1,4 @@
-# Drago-UI v0.3.5
+# Drago-UI v0.3.6
  
 Demo: https://6647358832ebdbe9a0ba8e06-puymcsjqwx.chromatic.com
 

@@ -16,7 +16,7 @@ export const Text: Story = {
   args: {
     id: 'text',
     label: 'Text',
-    placeholder: 'Text here',
+    placeholder: 'type something...',
     required: true,
   },
 };

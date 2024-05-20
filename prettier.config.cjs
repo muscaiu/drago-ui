@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-
 export default {
   semi: true, // Use semicolons at the end of statements
   singleQuote: true, // Use single quotes instead of double quotes
