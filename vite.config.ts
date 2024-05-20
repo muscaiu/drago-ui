@@ -1,29 +1,29 @@
 /// <reference types="vitest" />
 
-import { defineConfig } from "vite";
-import { resolve } from "path";
-import react from "@vitejs/plugin-react";
-import tsConfigPaths from "vite-tsconfig-paths";
-import tailwindcss from "tailwindcss";
-import autoprefixer from "autoprefixer";
-import dts from "vite-plugin-dts";
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
+import react from '@vitejs/plugin-react';
+import tsConfigPaths from 'vite-tsconfig-paths';
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
-  plugins: [react(), tsConfigPaths(), dts({ insertTypesEntry: true})],
+  plugins: [react(), tsConfigPaths(), dts({ insertTypesEntry: true })],
   build: {
     // ui-library entry and output settings
     lib: {
-      entry: resolve(__dirname, "lib/main.ts"),
-      name: "drago-ui",
-      fileName: "drago-ui",
+      entry: resolve(__dirname, 'lib/main.ts'),
+      name: 'drago-ui',
+      fileName: 'drago-ui',
     },
     rollupOptions: {
-      external: ["react", "react-dom", "react/jsx-runtime"],
+      external: ['react', 'react-dom', 'react/jsx-runtime'],
       output: {
         globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
-          "react/jsx-runtime": "react/jsx-runtime",
+          react: 'React',
+          'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'react/jsx-runtime',
         },
       },
     },
@@ -35,8 +35,8 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    environment: "jsdom",
-    setupFiles: "./lib/test/setup.ts",
+    environment: 'jsdom',
+    setupFiles: './test/setup.ts',
     css: true, // may tests slower
   },
 });

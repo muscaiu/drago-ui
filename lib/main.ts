@@ -1,3 +1,4 @@
-import "./tailwind.css";
+import './tailwind.css';
 
-export { Button } from "./Button/Button";
+export { Button } from './Button/Button';
+export { Input } from './Input/Input';

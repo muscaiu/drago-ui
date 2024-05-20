@@ -1,9 +1,9 @@
-type Props = {
+export type ButtonProps = {
   children: string;
   primary?: boolean;
   size?: 'small' | 'medium' | 'large';
   onClick?: () => void;
-}
+};
 
 export const Button = ({
   children,
@@ -11,9 +11,9 @@ export const Button = ({
   size = 'medium',
   onClick,
   ...props
-}: Props) => {
+}: ButtonProps) => {
   const classes = `
-    text-white py-2 px-4 rounded-2xl
+    text-white py-2 px-4 rounded
     ${primary ? 'bg-blue-500 hover:bg-blue-700' : 'bg-gray-400 hover:bg-gray-500'}
     ${size === 'small' ? 'text-sm' : size === 'large' ? 'text-xl' : 'text-base'}
   `;

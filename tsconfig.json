@@ -25,6 +25,6 @@
     /* Vitest */
     "types":  ["vitest/globals"]
   },
-  "include": ["src", "lib"],
+  "include": ["src", "lib", "test"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
