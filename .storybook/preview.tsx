@@ -42,7 +42,7 @@ const preview: Preview = {
     options: {
       storySort: {
         method: '',
-        order: ['Drago-UI', ['Button', 'Input', 'CopyToClipboard']],
+        order: ['Drago-UI', ['Button', 'Input', 'CodeBlock']],
         locales: '',
       },
     },
