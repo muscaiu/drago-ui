@@ -28,7 +28,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
     <OneLiner text={text} onClick={onClick} copied={copied} />
   ) : (
     <div className="w-full max-w-lg">
-      <div className="bg-gray-50 rounded-lg dark:bg-gray-700 max-h-64">
+      <div className="bg-gray-50 rounded-lg dark:bg-gray-700">
         <div className="flex justify-between items-center text-gray-900 dark:text-gray-400 dark:bg-gray-800 rounded-t-lg py-2 px-2.5">
           {fileName ? (
             <span className="text-xs font-semibold text-gray-900 dark:text-gray-400">

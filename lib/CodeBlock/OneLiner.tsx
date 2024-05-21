@@ -20,7 +20,7 @@ export const OneLiner: React.FC<OneLinerProps> = ({
             <code>{text}</code>
           </pre>
         </div>
-        <div className="absolute top-2 right-2">
+        <div className="absolute top-1/2 -translate-y-1/2 right-2 ">
           <CopyCodeButton onClick={onClick} copied={copied} />
         </div>
       </div>
