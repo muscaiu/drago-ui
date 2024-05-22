@@ -3,20 +3,20 @@ import { CopyCodeButton } from './CopyCodeButton';
 import { OneLiner } from './OneLiner';
 
 export type CodeBlockProps = {
-  text: string;
+  code: string;
   fileName?: string;
 };
 
 export const CodeBlock: React.FC<CodeBlockProps> = ({
-  text = 'copy to clipboard',
+  code = 'copy to clipboard',
   fileName,
 }: CodeBlockProps) => {
   const [copied, setCopied] = useState(false);
-  const isSingleLine = !text.includes('\n');
+  const isSingleLine = !code.includes('\n');
 
   const onClick = async () => {
     try {
-      await navigator.clipboard.writeText(text);
+      await navigator.clipboard.writeText(code);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (error) {
@@ -25,7 +25,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
   };
 
   return isSingleLine ? (
-    <OneLiner text={text} onClick={onClick} copied={copied} />
+    <OneLiner code={code} onClick={onClick} copied={copied} />
   ) : (
     <div className="w-full max-w-lg">
       <div className="bg-gray-50 rounded-lg dark:bg-gray-700">
@@ -41,7 +41,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
         </div>
         <div className="overflow-scroll max-h-full text-gray-300 p-2">
           <pre>
-            <code>{text}</code>
+            <code>{code}</code>
           </pre>
         </div>
       </div>

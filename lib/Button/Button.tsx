@@ -2,6 +2,7 @@ export type ButtonProps = {
   children: string;
   primary?: boolean;
   size?: 'small' | 'medium' | 'large';
+  type?: 'button' | 'submit';
   onClick?: () => void;
 };
 
@@ -9,6 +10,7 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   primary = false,
   size = 'medium',
+  type = 'submit',
   onClick,
   ...props
 }: ButtonProps) => {
@@ -19,7 +21,7 @@ export const Button: React.FC<ButtonProps> = ({
   `;
 
   return (
-    <button type="button" className={classes} onClick={onClick} {...props}>
+    <button type={type} className={classes} onClick={onClick} {...props}>
       {children}
     </button>
   );

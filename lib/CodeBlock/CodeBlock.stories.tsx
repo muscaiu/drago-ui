@@ -14,14 +14,14 @@ export const Oneliner: Story = (args: CodeBlockProps) => (
   <CodeBlock {...args} />
 );
 Oneliner.args = {
-  text: 'pnpm install drago-ui',
+  code: 'pnpm install drago-ui',
 };
 
 export const MultiRow: Story = (args: CodeBlockProps) => (
   <CodeBlock {...args} />
 );
 MultiRow.args = {
-  text: `
+  code: `
   import { Button, Card } from 'drago-ui';
   import 'drago-ui/dist/style.css';
   `,
@@ -32,7 +32,7 @@ export const FileName: Story = (args: CodeBlockProps) => (
 );
 FileName.args = {
   fileName: 'App.tsx',
-  text: `
+  code: `
   import { Button, Card } from 'drago-ui';
   import 'drago-ui/dist/style.css';
   `,

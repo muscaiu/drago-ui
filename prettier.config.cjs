@@ -1,4 +1,5 @@
-export default {
+// eslint-disable-next-line no-undef
+module.exports = {
   semi: true, // Use semicolons at the end of statements
   singleQuote: true, // Use single quotes instead of double quotes
   tabWidth: 2, // Set indentation width to 2 spaces

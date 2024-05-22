@@ -2,13 +2,13 @@ import React from 'react';
 import { CopyCodeButton } from './CopyCodeButton';
 
 export type OneLinerProps = {
-  text: string;
+  code: string;
   copied: boolean;
   onClick: () => void;
 };
 
 export const OneLiner: React.FC<OneLinerProps> = ({
-  text = 'copy to clipboard',
+  code = 'copy to clipboard',
   onClick,
   copied,
 }: OneLinerProps) => {
@@ -17,7 +17,7 @@ export const OneLiner: React.FC<OneLinerProps> = ({
       <div className="relative p-2 bg-gray-50 rounded-lg dark:bg-gray-700 max-h-64">
         <div className="overflow-scroll max-h-full text-gray-300 p-2">
           <pre>
-            <code>{text}</code>
+            <code>{code}</code>
           </pre>
         </div>
         <div className="absolute top-1/2 -translate-y-1/2 right-2 ">
