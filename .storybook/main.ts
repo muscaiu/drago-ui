@@ -5,6 +5,7 @@ const config: StorybookConfig = {
     '../lib/**/**/*.mdx',
     '../lib/**/**/*.stories.@(js|jsx|mjs|ts|tsx)',
   ],
+
   addons: [
     '@storybook/addon-onboarding',
     '@storybook/addon-links',
@@ -13,13 +14,20 @@ const config: StorybookConfig = {
     '@storybook/addon-interactions',
     '@storybook/addon-designs',
     '@storybook/addon-a11y',
+    '@storybook/addon-mdx-gfm'
   ],
+
   framework: {
     name: '@storybook/react-vite',
     options: {},
   },
+
   docs: {
-    defaultName: 'Documentation',
+    defaultName: 'Documentation'
   },
+
+  typescript: {
+    reactDocgen: 'react-docgen-typescript'
+  }
 };
 export default config;
