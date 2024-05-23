@@ -3,7 +3,7 @@ import { Input } from './Input';
 
 describe(`Component: ${Input.name}`, () => {
   it('should render', () => {
-    const { container } = render(<Input name="sss" label="Text" />);
+    const { container } = render(<Input label="Text" />);
     expect(container).toBeInTheDocument();
   });
 
@@ -27,5 +27,10 @@ describe(`Component: ${Input.name}`, () => {
   it('should be required if the required prop is passed', () => {
     const { getByLabelText } = render(<Input label="Text" required />);
     expect(getByLabelText(/Text/)).toBeRequired();
+  });
+
+  it('should not render a label if the label prop is not provided', () => {
+    const { queryByText } = render(<Input />);
+    expect(queryByText(/Text/)).not.toBeInTheDocument();
   });
 });

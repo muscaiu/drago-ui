@@ -10,13 +10,16 @@ export type InputProps = {
   validation?: RegisterOptions;
 };
 
-const Label: React.FC<{ label?: string; required?: boolean }> = ({
-  label,
-  required,
-}) => {
+const Label: React.FC<{
+  label?: string;
+  required?: boolean;
+  htmlFor?: string;
+}> = ({ label, required, htmlFor }) => {
   if (!label) return null;
   return (
-    <label className="block ml-2 text-sm font-medium text-gray-900">
+    <label
+      htmlFor={htmlFor}
+      className="block ml-2 text-sm font-medium text-gray-900">
       {label}
       {required && <span className="text-red-500">*</span>}
     </label>
@@ -38,12 +41,14 @@ export const Input: React.FC<InputProps> = ({
   ...props
 }) => {
   const formContext = useFormContext();
+  const inputId = React.useId();
 
   if (!formContext || !name) {
     return (
       <div>
-        <Label label={label} required={required} />
+        {label && <Label label={label} required={required} htmlFor={inputId} />}
         <input
+          id={inputId}
           type={type}
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
           placeholder={placeholder}
@@ -61,8 +66,9 @@ export const Input: React.FC<InputProps> = ({
 
   return (
     <div>
-      <Label label={label} required={required} />
+      {label && <Label label={label} required={required} htmlFor={inputId} />}
       <input
+        id={inputId}
         type={type}
         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
         placeholder={placeholder}
