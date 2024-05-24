@@ -12,7 +12,6 @@ const meta: Meta<ButtonProps> = {
       accessToken: import.meta.env.STORYBOOK_FIGMA_ACCESS_TOKEN,
     },
   },
-  // tags: ['!autodocs'],
 };
 
 export default meta;

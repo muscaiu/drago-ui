@@ -1,5 +1,6 @@
-import React from 'react';
 import type { Preview } from '@storybook/react';
+
+import '../lib/tailwind.css';
 import {
   Title,
   Subtitle,
@@ -8,10 +9,8 @@ import {
   Controls,
   Stories,
 } from '@storybook/blocks';
-// import { themes, ensure } from '@storybook/theming';
-
-import CodeBlock from './CodeBlock';
-import '../lib/tailwind.css';
+import React from 'react';
+import InjectedDocs from './InjectedDocs';
 
 const preview: Preview = {
   parameters: {
@@ -30,19 +29,16 @@ const preview: Preview = {
           <Description />
           <Primary />
           <Controls />
+          <InjectedDocs />
           <Stories />
         </>
       ),
       toc: true,
-      components: {
-        code: CodeBlock,
-      },
-      // theme: ensure(themes.light),
     },
     options: {
       storySort: {
         method: '',
-        order: ['Drago-UI', ['Button', 'Input', 'CodeBlock']],
+        order: ['Drago-UI', ['Button', 'Input', 'Form', 'CodeBlock']],
         locales: '',
       },
     },

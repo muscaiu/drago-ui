@@ -1,4 +1,4 @@
-# Drago-UI v0.4.1
+# Drago-UI v0.4.2
  
 Demo: https://6647358832ebdbe9a0ba8e06-zrsegatxmt.chromatic.com
 
@@ -13,7 +13,7 @@ pnpm install drago-ui
 ```
 2. Import components in your project:
 ```javascript
-import { Button, Card } from 'drago-ui';
+import { Button } from 'drago-ui';
 import "drago-ui/dist/style.css";
 ```
 ```tsx
