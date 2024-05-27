@@ -18,16 +18,15 @@ export const Text: Story = {
   },
 };
 
-export const Email: Story = {
+export const WithLabel: Story = {
   args: {
     label: 'Email',
     type: 'email',
     placeholder: 'john.doe@Drago-UI.com',
-    required: true,
   },
 };
 
-export const Password: Story = {
+export const WithLabelRequired: Story = {
   args: {
     label: 'Password',
     type: 'password',

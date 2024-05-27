@@ -1,6 +1,5 @@
+import React from 'react';
 import type { Preview } from '@storybook/react';
-
-import '../lib/tailwind.css';
 import {
   Title,
   Subtitle,
@@ -9,8 +8,9 @@ import {
   Controls,
   Stories,
 } from '@storybook/blocks';
-import React from 'react';
-import InjectedDocs from './InjectedDocs';
+
+// import InjectedDocs from './InjectedDocs';
+import '../lib/tailwind.css';
 
 const preview: Preview = {
   parameters: {
@@ -29,7 +29,7 @@ const preview: Preview = {
           <Description />
           <Primary />
           <Controls />
-          <InjectedDocs />
+          {/* <InjectedDocs /> */}
           <Stories />
         </>
       ),
