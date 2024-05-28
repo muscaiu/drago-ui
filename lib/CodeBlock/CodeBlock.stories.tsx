@@ -15,12 +15,14 @@ export const Oneliner: Story = (args: CodeBlockProps) => (
 );
 Oneliner.args = {
   code: 'pnpm install drago-ui',
+  language: 'bash',
 };
 
 export const MultiRow: Story = (args: CodeBlockProps) => (
   <CodeBlock {...args} />
 );
 MultiRow.args = {
+  language: 'tsx',
   code: `
   import { Button, Card } from 'drago-ui';
   import 'drago-ui/dist/style.css';

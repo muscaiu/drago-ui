@@ -1,33 +1,49 @@
-# Drago-UI v0.4.2
+# Drago-UI v0.4.3
  
-Demo: https://6647358832ebdbe9a0ba8e06-zrsegatxmt.chromatic.com
+ A multipurpose Storybook UI Library
+ <br>
 
-Repo: https://github.com/muscaiu/drago-ui
+Links: [Demo](https://6647358832ebdbe9a0ba8e06-zrsegatxmt.chromatic.com) | 
+[Github](https://github.com/muscaiu/drago-ui) | [NPM](https://www.npmjs.com/package/drago-ui) | [Chromatic](https://www.chromatic.com/builds?appId=6647358832ebdbe9a0ba8e06)
+
+![hero](/public/example.png)
 
 
-## How to Use:
+## Development:
+
+1. Clone Repository:
+```bash
+git clone https://github.com/muscaiu/drago-ui
+```
+2. Install dependencies:
+```bash
+pnpm i
+```
+3. Run Storybook locally:
+
+```bash
+ pnpm run storybook
+```
+
+<br><br><br>
+
+## How to use the components in a separate project:
 
 1. Install the package from npm:
 ```bash
 pnpm install drago-ui
 ```
-2. Import components in your project:
+2. Import components in your project. Example:
 ```javascript
 import { Button } from 'drago-ui';
-import "drago-ui/dist/style.css";
-```
-```tsx
-<Button variant="primary">Click me</Button>
-```
+import 'drago-ui/dist/style.css'; //in layout
 
-## Development:
-
-```bash
- pnpm run storybook
- http://localhost:6006/
+<Button>Click Me</Button>
 ```
 
-### Dependencies:
+<br><br><br>
+
+## Dependencies:
 
 - Vite
 - Storybook

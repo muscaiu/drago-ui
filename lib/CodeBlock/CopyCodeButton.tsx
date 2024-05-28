@@ -12,7 +12,7 @@ export const CopyCodeButton: React.FC<CopyCodeButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className="text-gray-900 dark:text-gray-400 m-0.5 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-lg py-2 px-2.5 inline-flex items-center justify-center bg-white border-gray-200 border">
+      className="inline-flex text-gray-900 dark:text-gray-400 m-0.5 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700 rounded-lg py-2 px-2.5 bg-white border-gray-200 border">
       <span
         id="default-message"
         className={`inline-flex items-center ${copied ? 'hidden' : ''}`}>

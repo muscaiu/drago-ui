@@ -4,7 +4,7 @@ import { Source } from '@storybook/blocks';
 const InjectedDocs = () => {
   return (
     <Source
-      code={`import { Component } from 'drago-ui';
+      code={`import { Button } from 'drago-ui';
 import 'drago-ui/dist/style.css'; //in layout`}
       language="jsx"
     />
