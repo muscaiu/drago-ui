@@ -1,4 +1,4 @@
-# Drago-UI v0.4.3
+# Drago-UI v0.4.4
  
  A multipurpose Storybook UI Library
  <br>
@@ -8,32 +8,38 @@ Links: [Demo](https://6647358832ebdbe9a0ba8e06-zrsegatxmt.chromatic.com) |
 
 ![hero](/public/example.png)
 
+<br><br>
 
 ## Development:
 
-1. Clone Repository:
+Clone Repository:
 ```bash
 git clone https://github.com/muscaiu/drago-ui
 ```
-2. Install dependencies:
+Install dependencies:
 ```bash
 pnpm i
 ```
-3. Run Storybook locally:
-
+Run Storybook locally:
 ```bash
  pnpm run storybook
 ```
+Publish new version:
+- increment version in `package.json` and `Readme.md`
+- merge changes
+```bash
+pnpm publish
+```
 
-<br><br><br>
+<br><br>
 
-## How to use the components in a separate project:
+## Using the components:
 
-1. Install the package from npm:
+Install the package from npm:
 ```bash
 pnpm install drago-ui
 ```
-2. Import components in your project. Example:
+Import components in your project. Example:
 ```javascript
 import { Button } from 'drago-ui';
 import 'drago-ui/dist/style.css'; //in layout
@@ -41,7 +47,7 @@ import 'drago-ui/dist/style.css'; //in layout
 <Button>Click Me</Button>
 ```
 
-<br><br><br>
+<br><br>
 
 ## Dependencies:
 
