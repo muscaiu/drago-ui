@@ -14,7 +14,7 @@ export const OneLiner: React.FC<OneLinerProps> = ({
 }: OneLinerProps) => {
   return (
     <div className="w-full max-w-lg">
-      <div className="relative p-2 bg-gray-50 rounded-lg dark:bg-gray-900">
+      <div className="relative bg-gray-50 rounded-lg dark:bg-gray-900">
         <div className="overflow-scroll max-h-full text-gray-300 p-2">
           <div dangerouslySetInnerHTML={{ __html: formattedCode }} />
         </div>
