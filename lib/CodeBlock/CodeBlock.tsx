@@ -57,7 +57,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
     <OneLiner formattedCode={formattedCode} onClick={onClick} copied={copied} />
   ) : (
     <div className="w-full">
-      <div className="bg-gray-50 rounded-lg dark:bg-gray-700">
+      <div className="bg-gray-50 rounded-lg dark:bg-code-dark">
         <div className="flex justify-between items-center text-gray-900 dark:text-gray-400 dark:bg-gray-800 rounded-t-lg px-2.5">
           {fileName ? (
             <span className="rounded-lg px-2.5 text-xs font-semibold text-gray-900 dark:text-gray-400">

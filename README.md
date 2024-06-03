@@ -1,4 +1,4 @@
-# Drago-UI v0.4.7
+# Drago-UI v0.4.8
  
  A multipurpose Storybook UI Library
  <br>
@@ -42,7 +42,7 @@ pnpm install drago-ui
 Import components in your project. Example:
 ```javascript
 import { Button } from 'drago-ui';
-import 'drago-ui/dist/style.css'; //in layout
+import 'drago-ui/dist/style.css'; //in layout, before your styles
 
 <Button>Click Me</Button>
 ```

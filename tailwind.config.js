@@ -3,10 +3,14 @@
 export default {
   content: [
     // reference the library only
-    "./lib/**/*.{js,ts,jsx,tsx}",
+    './lib/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'code-dark': '#121212',
+      },
+    },
   },
   plugins: [],
 };
