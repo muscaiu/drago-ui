@@ -56,7 +56,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
   return isSingleLine ? (
     <OneLiner formattedCode={formattedCode} onClick={onClick} copied={copied} />
   ) : (
-    <div className="w-full max-w-lg">
+    <div className="w-full">
       <div className="bg-gray-50 rounded-lg dark:bg-gray-700">
         <div className="flex justify-between items-center text-gray-900 dark:text-gray-400 dark:bg-gray-800 rounded-t-lg px-2.5">
           {fileName ? (
@@ -68,8 +68,11 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
           )}
           <CopyCodeButton onClick={onClick} copied={copied} />
         </div>
-        <div className="overflow-scroll max-h-full text-gray-300">
-          <div dangerouslySetInnerHTML={{ __html: formattedCode }} />
+        <div className="overflow-scroll max-h-full">
+          <div
+            className="p-2"
+            dangerouslySetInnerHTML={{ __html: formattedCode }}
+          />
         </div>
       </div>
     </div>

@@ -16,7 +16,10 @@ export const OneLiner: React.FC<OneLinerProps> = ({
     <div className="w-full max-w-lg">
       <div className="relative bg-gray-50 rounded-lg dark:bg-gray-900">
         <div className="overflow-scroll max-h-full text-gray-300 p-2">
-          <div dangerouslySetInnerHTML={{ __html: formattedCode }} />
+          <div
+            className="p-1"
+            dangerouslySetInnerHTML={{ __html: formattedCode }}
+          />
         </div>
         <div className="absolute top-1/2 -translate-y-1/2 right-2 ">
           <CopyCodeButton onClick={onClick} copied={copied} />
