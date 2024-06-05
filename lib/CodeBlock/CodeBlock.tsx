@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { codeToHtml } from 'shiki';
 
 import { CopyCodeButton } from './CopyCodeButton';
-import { OneLiner } from './OneLiner';
 
 export type CodeBlockProps = {
   code: string;
@@ -17,8 +16,6 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
 }: CodeBlockProps) => {
   const [copied, setCopied] = useState(false);
   const [formattedCode, setFormattedCode] = useState('');
-
-  const isSingleLine = !code.includes('\n');
 
   useEffect(() => {
     const fetchFormattedCode = async () => {
@@ -53,9 +50,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
     }
   };
 
-  return isSingleLine ? (
-    <OneLiner formattedCode={formattedCode} onClick={onClick} copied={copied} />
-  ) : (
+  return (
     <div className="w-full">
       <div className="bg-gray-50 rounded-lg dark:bg-code-dark">
         <div className="flex justify-between items-center text-gray-900 dark:text-gray-400 dark:bg-gray-800 rounded-t-lg px-2.5">
@@ -70,7 +65,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
         </div>
         <div className="overflow-scroll max-h-full">
           <div
-            className="p-2"
+            className="p-4"
             dangerouslySetInnerHTML={{ __html: formattedCode }}
           />
         </div>
